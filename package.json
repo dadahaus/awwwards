@@ -1,0 +1,13 @@
+{
+  "name": "awwwards",
+  "version": "1.0.0",
+  "description": "a website with no frameworks",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "development": "",
+    "start": "node test.js"
+  },
+  "author": "Agustin Sanchez",
+  "license": "ISC"
+}
