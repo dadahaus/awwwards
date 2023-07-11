@@ -13,5 +13,8 @@ const dirStyles = path.join(__dirname, 'styles')
 
 // console.log(dirApp, dirAssets, dirStyles)
 module.exports = {
-     
+    entry: [
+        path.join(dirApp, 'index.js'),
+        path.join(dirStyles, 'index.scss')
+    ]
 }
