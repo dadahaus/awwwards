@@ -40,7 +40,22 @@ module.exports = {
                     to: ''
                 }
             ]
+        }),
+        newMiniCssExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css'
         })
 
-    ]
+    ],
+
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }       
+        ]
+    }
 }
