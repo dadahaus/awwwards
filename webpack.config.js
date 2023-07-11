@@ -9,6 +9,9 @@ const IS_DEVELOPMENT = process.env.NODE_ENV == 'dev'
 
 const dirApp = path.join(__dirname, 'app')
 const dirAssets = path.join(__dirname, 'assets')
-const dirStyleas = path.join(__dirname, 'styles')
+const dirStyles = path.join(__dirname, 'styles')
 
-console.log(dirApp, dirAssets, dirStyles)
+// console.log(dirApp, dirAssets, dirStyles)
+module.exports = {
+     
+}
