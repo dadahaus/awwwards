@@ -1,5 +1,5 @@
-// import math from 'utils/math'
+import math from 'utils/math'
 
-// if (IS_DEVELOPMENT) {
-//     console.log('')
-// }
+if (IS_DEVELOPMENT) {
+    console.log('')
+}
