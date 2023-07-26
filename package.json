@@ -4,6 +4,7 @@
   "description": "a website with no frameworks",
   "main": "index.js",
   "scripts": {
+    "backend:build": "node app.js",
     "build": "webpack --progress --config webpack.config.build.js",
     "development": "webpack serve --progress --config webpack.config.development.js",
     "start": "node test.js"
