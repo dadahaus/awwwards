@@ -7,23 +7,16 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
 
 app.get('/', (req, res) => {
-  // res.render('pages/home')
-  res.render('template', {
-    meta: {
-      data: {
-        title: 'Floeasdasdma',
-        description: 'Metadata description'
-      }
-    }
-  })
+  res.render('pages/home')
+  
 })
 
 app.get('/about', (req, res) => {
   res.render('pages/about')
 })
 
-app.get('/colections', (req, res) => {
-  res.render('pages/colections')
+app.get('/collections', (req, res) => {
+  res.render('pages/collections')
 })
 
 app.get('/detail/:id', (req, res) => {
