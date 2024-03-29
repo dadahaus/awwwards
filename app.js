@@ -49,9 +49,6 @@ app.get("/about", async (req, res) => {
         res.render("pages/about");
       });
   });
-  // res.render("pages/about");
-  // const document = await client.getSingle("about");
-  // res.render("about", { about });
 });
 
 app.get("/collections", (req, res) => {
