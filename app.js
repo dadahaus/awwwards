@@ -42,14 +42,16 @@ app.get("/", (req, res) => {
 app.get("/about", async (req, res) => {
   initApi(req).then((api) => {
     api
-      .query(Prismic.predicates.at("document.type", "about"))
+      .query(Prismic.Predicates.at("document.type", "about"))
       .then((response) => {
         console.log(response);
         // res.render("pages/about", { document: response.results[0] });
         res.render("pages/about");
       });
   });
-  res.render("pages/about");
+  // res.render("pages/about");
+  // const document = await client.getSingle("about");
+  // res.render("about", { about });
 });
 
 app.get("/collections", (req, res) => {
