@@ -44,9 +44,13 @@ app.get("/about", async (req, res) => {
     api
       .query(Prismic.Predicates.at("document.type", "about"))
       .then((response) => {
-        console.log(response);
+        const { results } = response;
+        const [about, meta] = results;
+        console.log(about, meta);
         // res.render("pages/about", { document: response.results[0] });
-        res.render("pages/about");
+        res.render("pages/about", {
+          about,
+        });
       });
   });
 });
