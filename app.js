@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
 app.get("/about", async (req, res) => {
   initApi(req).then((api) => {
     api
-      .query(Prismic.Predicates.at("document.type", "about"))
+      .query(Prismic.predicates.at("document.type", "about"))
       .then((response) => {
         console.log(response);
         // res.render("pages/about", { document: response.results[0] });
