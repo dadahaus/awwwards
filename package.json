@@ -7,7 +7,7 @@
     "backend:build": "nodemon app.js",
     "build": "webpack --progress --config webpack.config.build.js",
     "development": "webpack serve --progress --config webpack.config.development.js",
-    "start": "node test.js"
+    "start": "node app.js"
   },
   "author": "Agustin Sanchez",
   "license": "ISC",
@@ -36,9 +36,11 @@
     "webpack-merge": "^5.9.0"
   },
   "dependencies": {
+    "@prismicio/client": "^7.4.0",
     "dotenv": "^16.4.5",
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
+    "prismic-dom": "^2.2.7",
     "pug": "^3.0.2"
   }
 }
