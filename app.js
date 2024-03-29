@@ -39,7 +39,16 @@ app.get("/", (req, res) => {
   res.render("pages/home");
 });
 
-app.get("/about", (req, res) => {
+app.get("/about", async (req, res) => {
+  initApi(req).then((api) => {
+    api
+      .query(Prismic.Predicates.at("document.type", "about"))
+      .then((response) => {
+        console.log(response);
+        // res.render("pages/about", { document: response.results[0] });
+        res.render("pages/about");
+      });
+  });
   res.render("pages/about");
 });
 
